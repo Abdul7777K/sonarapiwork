@@ -1,5 +1,4 @@
-name: .NET Core Build and SonarQube Analysis
-
+name: .NET Core Build and SonarQube Analysiss
 on:
   push:
     branches:
