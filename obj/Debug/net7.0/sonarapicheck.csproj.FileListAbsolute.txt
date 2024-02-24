@@ -1,0 +1,15 @@
+D:\pythonProject\List_Resumes\sonarapicheck\bin\Debug\net7.0\sonarapicheck.exe
+D:\pythonProject\List_Resumes\sonarapicheck\bin\Debug\net7.0\sonarapicheck.deps.json
+D:\pythonProject\List_Resumes\sonarapicheck\bin\Debug\net7.0\sonarapicheck.runtimeconfig.json
+D:\pythonProject\List_Resumes\sonarapicheck\bin\Debug\net7.0\sonarapicheck.dll
+D:\pythonProject\List_Resumes\sonarapicheck\bin\Debug\net7.0\sonarapicheck.pdb
+D:\pythonProject\List_Resumes\sonarapicheck\obj\Debug\net7.0\sonarapicheck.csproj.AssemblyReference.cache
+D:\pythonProject\List_Resumes\sonarapicheck\obj\Debug\net7.0\sonarapicheck.GeneratedMSBuildEditorConfig.editorconfig
+D:\pythonProject\List_Resumes\sonarapicheck\obj\Debug\net7.0\sonarapicheck.AssemblyInfoInputs.cache
+D:\pythonProject\List_Resumes\sonarapicheck\obj\Debug\net7.0\sonarapicheck.AssemblyInfo.cs
+D:\pythonProject\List_Resumes\sonarapicheck\obj\Debug\net7.0\sonarapicheck.csproj.CoreCompileInputs.cache
+D:\pythonProject\List_Resumes\sonarapicheck\obj\Debug\net7.0\sonarapicheck.dll
+D:\pythonProject\List_Resumes\sonarapicheck\obj\Debug\net7.0\refint\sonarapicheck.dll
+D:\pythonProject\List_Resumes\sonarapicheck\obj\Debug\net7.0\sonarapicheck.pdb
+D:\pythonProject\List_Resumes\sonarapicheck\obj\Debug\net7.0\sonarapicheck.genruntimeconfig.cache
+D:\pythonProject\List_Resumes\sonarapicheck\obj\Debug\net7.0\ref\sonarapicheck.dll
