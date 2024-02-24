@@ -1,20 +1,38 @@
+name: .NET Core Build and SonarQube Analysis
+
 on:
-  # Trigger analysis when pushing to your main branches, and when creating a pull request..
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
-name: Main Workflow
 jobs:
-  sonarqube:
+  build:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v3
       with:
-        # Disabling shallow clones is recommended for improving the relevancy of reporting
-        fetch-depth: 0
-    - name: SonarQube Scan
-      uses: sonarsource/sonarqube-scan-action@master
-      env:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        fetch-depth: 0 # Important for SonarQube to understand the context
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '5.0.x' # Specify the .NET version
+
+    - name: Build with dotnet
+      run: dotnet build --configuration Release
+
+    - name: Install SonarScanner for .NET
+      run: dotnet tool install --global dotnet-sonarscanner
+
+    - name: Begin SonarQube analysis
+      run: dotnet sonarscanner begin /k:"workingonapi" /d:sonar.host.url="${{ secrets.SONAR_HOST_URL }}" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+
+    - name: Build the project with dotnet
+      run: dotnet build
+
+    - name: End SonarQube analysis
+      run: dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
