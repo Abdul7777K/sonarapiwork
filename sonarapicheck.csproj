@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <!-- Add package references here -->
+  <ItemGroup>
+    <!-- Add the System.Data.SqlClient package reference -->
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
 </Project>
